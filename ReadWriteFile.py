@@ -3,11 +3,17 @@ file = open('test.txt')
 #print(file.read(10))
 #print(file.readline())
 
-line = file.readline()
+values = file.readlines()
 
-while line != '':
-    print(line)
-    line = file.readline()
+for i in values:
+    print(i)
+
+#line = file.readline()
+
+#while line != '':
+#    print(line)
+#    line = file.readline()
+
 
 
 file.close()
