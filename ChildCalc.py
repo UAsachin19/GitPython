@@ -7,6 +7,8 @@ class ChildCalc(Calculator):
     def __init__(self, a, b):
         Calculator.__init__(self, a, b)
         print("child class constructor")
+        name = input("Give me your name: ")
+        print("Your name is " + name)
 
     def complete(self):
         return self.num2 + self.num + self.summation()
